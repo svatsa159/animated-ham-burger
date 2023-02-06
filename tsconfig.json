@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "build",
     "target": "es5",
     "lib": [
       "dom",
@@ -20,7 +22,14 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  "files": [
+    "custom.d.ts"
+  ],
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
   ]
 }

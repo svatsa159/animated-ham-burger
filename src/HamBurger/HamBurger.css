@@ -1,0 +1,61 @@
+@keyframes burger-open {
+    0%{
+        perspective-origin: right;
+        transform: translateX(0px) rotateZ(0deg);
+    }
+    100%{
+        perspective-origin: right;
+        transform: translateY(-35.5%) translateX(30.47%) rotateZ(30deg);
+    }
+}
+
+@keyframes burger-open-middle {
+    0%{
+        perspective-origin: bottom;
+        transform: translateX(0px) rotateZ(0deg);
+    }
+    100%{
+        perspective-origin: bottom;
+        transform: translateY(-53.3%) translateX(7.62%) rotateZ(15deg);
+    }
+}
+@keyframes burger-close {
+    100%{
+        perspective-origin: right;
+        transform: translateX(0px) rotateZ(0deg);
+    }
+    0%{
+        perspective-origin: right;
+        transform: translateY(-35.5%) translateX(30.47%) rotateZ(30deg);
+    }
+}
+
+@keyframes burger-close-middle {
+    100%{
+        perspective-origin: bottom;
+        transform: translateX(0px) rotateZ(0deg);
+    }
+    0%{
+        perspective-origin: bottom;
+        transform: translateY(-53.3%) translateX(7.62%) rotateZ(15deg);
+    }
+}
+
+.burgerOpen{
+    animation: burger-open 400ms ease-out;
+    animation-fill-mode: forwards;
+}
+
+.burgerOpenMiddle{
+    animation: burger-open-middle 400ms ease-out;
+    animation-fill-mode: forwards;
+}
+.burgerClose{
+    animation: burger-close 400ms ease-out;
+    animation-fill-mode: forwards;
+}
+
+.burgerCloseMiddle{
+    animation: burger-close-middle 400ms ease-out;
+    animation-fill-mode: forwards;
+}
